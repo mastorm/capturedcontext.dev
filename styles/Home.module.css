@@ -6,3 +6,15 @@
 .domain {
     padding-left: 1rem;
 }
+.introduction {
+    display: flex;
+    gap: 3%;
+    align-items: center;
+}
+
+.aboutMe > h2 {
+    margin: 0;
+}
+.aboutMe > p {
+    margin: 0px;
+}
