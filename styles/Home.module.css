@@ -1,2 +1,8 @@
-.container {
+.headline {
+    color: var(--main-color-contrastText);
+    background-color: var(--main-color);
+    padding: 0 2rem;
+}
+.domain {
+    padding-left: 1rem;
 }
