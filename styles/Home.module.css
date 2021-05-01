@@ -1,7 +1,7 @@
 .headline {
     color: var(--main-color-contrastText);
     background-color: var(--main-color);
-    padding: 0 2rem;
+    padding: 0 2% 0.6% 2%;
 }
 .domain {
     padding-left: 1rem;

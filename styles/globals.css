@@ -6,11 +6,13 @@
   --main-text-color: #FFFFFF;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, OpenSans, Segoe UI, Roboto, Oxygen,
+  font-family: 'Open Sans', -apple-system, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
@@ -18,10 +20,6 @@ body {
 
 html {
   font-size: 62.5%; /* font-size 1em = 10px */
-}
-
-body {
-  padding: 0 25%;
 }
 
 a {
@@ -32,7 +30,6 @@ a {
 * {
   box-sizing: border-box;
 }
-
 h1, h2, h3, h4, h5, h6 {
   color: var(--main-color);
 }
@@ -40,4 +37,28 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 4rem;
   font-weight: bold;
+  margin-top: unset;
 }
+
+
+body {
+  /* Dunno if setting the padding top and bottom on body is a good idea. */
+  /* if its not, just wrap the content in a div. I just wanted to avoid it. */
+  padding: 80px 25%;
+}
+@media (max-width: 76.8rem) {
+  body {
+    padding: 40px 10%;
+  }
+}
+
+@media (max-width: 37.5rem) {
+  body {
+    padding: 10% 10%;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+
