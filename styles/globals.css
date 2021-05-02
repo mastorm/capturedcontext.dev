@@ -1,9 +1,8 @@
-
 :root {
-  --main-color: #F6BD60;
+  --main-color: #f6bd60;
   --main-color-contrastText: #212121;
   --main-bg-color: #212121;
-  --main-text-color: #FFFFFF;
+  --main-text-color: #ffffff;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
@@ -12,8 +11,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Open Sans', -apple-system, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Open Sans', -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
 }
@@ -30,10 +29,14 @@ a {
 * {
   box-sizing: border-box;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--main-color);
   margin-top: unset;
-
 }
 
 h1 {
@@ -45,7 +48,7 @@ h2 {
   font-size: 2rem;
 }
 
-p{
+p {
   font-size: 1.5rem;
 }
 
@@ -68,8 +71,6 @@ body {
   h1 {
     font-size: 3rem;
   }
-  
-
 }
 
 @media (max-width: 375px) {
@@ -80,5 +81,3 @@ body {
     font-size: 2rem;
   }
 }
-
-

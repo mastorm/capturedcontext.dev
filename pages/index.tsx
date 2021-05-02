@@ -1,14 +1,20 @@
-import Head from 'next/head';
-import React from "react";
-import { Avatar } from '../components/Avatar';
-import { default as classes, default as styles } from '../styles/Home.module.css';
+import Head from 'next/head'
+import React from 'react'
+import { Avatar } from '../components/Avatar'
+import {
+  default as classes,
+  default as styles,
+} from '../styles/Home.module.css'
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
         <title>CapturedContext</title>
-        <meta name="description" content="Interesting articles about Technology featuring React, GraphQL and DevOps." />
+        <meta
+          name="description"
+          content="Interesting articles about Technology featuring React, GraphQL and DevOps."
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
@@ -24,7 +30,8 @@ export default function Home() {
             <div className={classes.aboutMe}>
               <h2>Mathias Storm</h2>
               <p>
-                Full-Stack Software engineer from Germany, writing about React, C# and GraphQL and DevOps.
+                Full-Stack Software engineer from Germany, writing about React,
+                C# and GraphQL and DevOps.
               </p>
             </div>
           </div>
