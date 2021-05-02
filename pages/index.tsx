@@ -1,10 +1,14 @@
+import { GetStaticProps } from 'next'
 import Head from 'next/head'
 import React from 'react'
-import { Articles } from '../components/Articles'
 import { Avatar } from '../components/Avatar'
+import { BlogPosts } from '../components/BlogPosts'
+import { BlogPost, getAllPosts } from '../lib/posts'
 import { default as styles } from '../styles/Home.module.css'
 
-export default function Home() {
+export default function Home({ posts }: { posts: BlogPost[] }) {
+  console.log('home', posts)
+
   return (
     <div className={'container'}>
       <Head>
@@ -37,9 +41,17 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <Articles />
+          <BlogPosts posts={posts} />
         </section>
       </main>
     </div>
   )
+}
+
+export const getStaticProps: GetStaticProps = async () => {
+  const posts = getAllPosts(['title', 'date', 'slug', 'excerpt'])
+
+  return Promise.resolve({
+    props: { posts },
+  })
 }
