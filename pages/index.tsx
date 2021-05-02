@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import React from 'react'
+import { Articles } from '../components/Articles'
 import { Avatar } from '../components/Avatar'
 import { default as styles } from '../styles/Home.module.css'
 
@@ -34,6 +35,9 @@ export default function Home() {
               </p>
             </div>
           </div>
+        </section>
+        <section>
+          <Articles />
         </section>
       </main>
     </div>

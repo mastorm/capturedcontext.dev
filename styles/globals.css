@@ -37,7 +37,7 @@ p {
 }
 
 section {
-  padding: 3rem 0;
+  padding-top: 3rem;
 }
 .container {
   width: min(90%, 60.5rem);
