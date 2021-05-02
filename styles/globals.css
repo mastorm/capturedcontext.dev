@@ -42,7 +42,8 @@ p {
   margin: 0;
 }
 
-section {
+section,
+main {
   padding-top: var(--spacing);
 }
 .container {

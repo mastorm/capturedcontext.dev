@@ -1,0 +1,5 @@
+.headline {
+  color: var(--main-color-contrastText);
+  background-color: var(--main-color);
+  padding: 0.5rem;
+}
