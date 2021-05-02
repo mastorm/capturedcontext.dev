@@ -1,10 +1,7 @@
 import Head from 'next/head'
 import React from 'react'
 import { Avatar } from '../components/Avatar'
-import {
-  default as classes,
-  default as styles,
-} from '../styles/Home.module.css'
+import { default as styles } from '../styles/Home.module.css'
 
 export default function Home() {
   return (
@@ -25,11 +22,11 @@ export default function Home() {
           </h1>
         </header>
         <section>
-          <div className={styles.introduction}>
+          <div className={styles.split}>
             <div>
               <Avatar />
             </div>
-            <div className={classes.aboutMe}>
+            <div>
               <h2>Mathias Storm</h2>
               <p>
                 Full-Stack Software engineer from Germany, writing about React,

@@ -3,8 +3,15 @@
   background-color: var(--main-color);
   padding: 0.5rem;
 }
-.introduction {
+.split {
   display: flex;
-  gap: 3%;
+  flex-flow: column;
   align-items: center;
+}
+
+@media (min-width: 768px) {
+  .split {
+    flex-flow: row;
+    gap: 1rem;
+  }
 }
