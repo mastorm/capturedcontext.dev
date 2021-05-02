@@ -8,7 +8,7 @@ import {
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className={'container'}>
       <Head>
         <title>CapturedContext</title>
         <meta
@@ -18,10 +18,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <h1>
-          <span className={styles.headline}>CapturedContext</span>
-          <span className={styles.domain}>.dev</span>
-        </h1>
+        <header>
+          <h1>
+            <span className={styles.headline}>CapturedContext</span>
+            <span className={styles.domain}>.dev</span>
+          </h1>
+        </header>
         <section>
           <div className={styles.introduction}>
             <div>

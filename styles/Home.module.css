@@ -1,20 +1,10 @@
 .headline {
   color: var(--main-color-contrastText);
   background-color: var(--main-color);
-  padding: 0 2% 0.6% 2%;
-}
-.domain {
-  padding-left: 1rem;
+  padding: 0.5rem;
 }
 .introduction {
   display: flex;
   gap: 3%;
   align-items: center;
-}
-
-.aboutMe > h2 {
-  margin: 0;
-}
-.aboutMe > p {
-  margin: 0px;
 }
