@@ -4,6 +4,7 @@
   --main-bg-color: #212121;
   --main-text-color: #ffffff;
   --ff-standard: 'Open Sans', Segoe UI, Helvetica Neue, sans-serif;
+  --spacing: 3rem;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
@@ -39,12 +40,12 @@ p {
 }
 
 section {
-  padding-top: 3rem;
+  padding-top: var(--spacing);
 }
 .container {
   width: min(90%, 60.5rem);
   margin-inline: auto;
-  padding: 3rem 0;
+  padding: var(--spacing) 0;
 }
 
 h1 {
