@@ -5,7 +5,9 @@ export const BlogPostTeaser: FC<{ post: BlogPost }> = ({ post }) => {
   return (
     <article className={styles.teaser}>
       <header>
-        <h3>{post.title}</h3>
+        <h3>
+          <a href={post.slug}>{post.title}</a>
+        </h3>
         <small>{post.date} • ☕️ 5 min read</small>
       </header>
       <p>{post.excerpt}</p>
