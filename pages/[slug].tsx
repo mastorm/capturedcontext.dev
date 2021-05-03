@@ -1,11 +1,31 @@
-import React, { FC } from 'react'
+import hljs from 'highlight.js'
+import csharp from 'highlight.js/lib/languages/csharp'
+import javascript from 'highlight.js/lib/languages/javascript'
+import json from 'highlight.js/lib/languages/json'
+import 'highlight.js/styles/atom-one-dark.css'
+import Head from 'next/head'
+import React, { FC, useEffect } from 'react'
 import { Logo } from '../components/Logo'
 import { Page } from '../components/Page'
 import markdownToHtml from '../lib/markdownToHtml'
 import { BlogPost, getAllPosts, getPostBySlug } from '../lib/posts'
+
+hljs.registerLanguage('javascript', javascript)
+hljs.registerLanguage('csharp', csharp)
+hljs.registerLanguage('json', json)
+
 export const Post: FC<{ post: BlogPost }> = ({ post }) => {
+  useEffect(() => {
+    hljs.initHighlighting()
+  }, [])
+
   return (
     <Page>
+      <Head>
+        <title>{post.title} - CapturedContext</title>
+        <meta name="description" content={post.excerpt} />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <h3>
         <Logo />
       </h3>
