@@ -37,7 +37,7 @@ export const Post: FC<{ post: BlogPost }> = ({ post }) => {
 export async function getStaticProps({ params }) {
   const post = getPostBySlug(params.slug, ['title', 'date', 'slug', 'content'])
   const content = await markdownToHtml(post.content || '')
-  //   const mdxSource = await renderToString(content)
+
   return {
     props: {
       post: {

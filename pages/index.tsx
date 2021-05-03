@@ -9,8 +9,6 @@ import { BlogPost, getAllPosts } from '../lib/posts'
 import { default as styles } from '../styles/Home.module.css'
 
 export default function Home({ posts }: { posts: BlogPost[] }) {
-  console.log('home', posts)
-
   return (
     <Page>
       <Head>
