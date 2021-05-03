@@ -1,3 +1,9 @@
+---
+title: Building a personal blog with NextJS
+excerpt: How i built my own Blog with NextJS and why I picked next
+date: '2021-05-03'
+---
+
 # Building a personal blog with NextJS
 
 A personal blog was a pet project that I wanted to do for a very long time now. And not only did I want a blog, no, but I also wanted it fast. Fast as in quickly built **and** performant. It should also scale well with future requirements so that I don't have to start from scratch the second I want to add something more complex. And here is how I did it.
