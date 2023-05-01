@@ -6,7 +6,7 @@ export const BlogPosts: FC<{ posts: BlogPost[] }> = ({ posts }) => {
   return (
     <>
       {posts.map((post) => (
-        <BlogPostTeaser post={post} />
+        <BlogPostTeaser key={post.slug} post={post} />
       ))}
     </>
   )
